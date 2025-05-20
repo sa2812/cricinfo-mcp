@@ -11,7 +11,7 @@ from constants import SERIES_ARCHIVE
 
 logger = logging.getLogger(__name__)
 
-mcp = FastMCP("cricinfo-mcp")
+mcp = FastMCP("Cricinfo")
 
 
 async def make_cricinfo_request(
@@ -68,7 +68,10 @@ class Series:
     date_location: str
 
 
-@mcp.tool()
+@mcp.tool(
+    name="Get Series By Year",
+    description="Get the full list of internationally-recognised cricket series for a given year",
+)
 async def get_series_by_year(year: int) -> list[Series]:
     """
     Get the full list of internationally-recognised cricket series for a given year
