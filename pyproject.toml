@@ -1,0 +1,12 @@
+[project]
+name = "cricinfo-mcp"
+version = "0.1.0"
+description = "Simple MCP server to get Series Archive information from ESPN Cricinfo"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "fake-useragent>=2.2.0",
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.9.0",
+]
