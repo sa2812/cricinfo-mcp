@@ -10,5 +10,7 @@ wheels/
 .venv
 .vscode
 
+claude_desktop_config.json
+
 *.log
 *.cache
