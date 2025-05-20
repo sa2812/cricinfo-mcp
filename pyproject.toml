@@ -1,5 +1,5 @@
 [project]
-name = "cricinfo-mcp"
+name = "Cricinfo MCP"
 version = "0.1.0"
 description = "Simple MCP server to get Series Archive information from ESPN Cricinfo"
 readme = "README.md"
